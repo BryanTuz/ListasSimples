@@ -4,11 +4,11 @@ public class UsaLista{
 		ListaSimple lista = new ListaSimple();
 
 		lista.insertaPrimerNodo("H");
-		lista.insertaAntesPrimerNodo("O");
+		lista.insertaAntesPrimerNodo("N");
 		lista.insertaAlFinal("Y");
 		lista.insertaEntreNodos("R", "A");
 		lista.imprimir();
-		System.out.print(lista);
+		//System.out.print(lista);
 	}
 
 

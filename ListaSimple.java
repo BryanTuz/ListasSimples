@@ -66,7 +66,7 @@ public class ListaSimple{
 			System.out.print("[ " + temp.name + " ] -> ");
 		}
 
-		System.out.print("[X]\n"); 
+		System.out.print("[K]\n"); 
 	}
 
 	public String toString(){
@@ -78,30 +78,6 @@ public class ListaSimple{
 		cadAux += "[X]\n"; 
 
 		return cadAux;
-	}
-
-	
-	//Métodos de borrado
-	public void borrarPrimerNodo(){
-		this.top = this.top.next;
-	}
-
-	//Borrar cualquier nodo que no sea el primero
-	public boolean borrarCualquierNodo(String buscado){
-		Node temp = this.top;
-
-		while ( (temp != null) 
-				&& temp.name.equals(buscado) == false ) {	
-		         temp = temp.next;
-		}
-
-		if (temp != null){  //Nodo buscado se encontró
-			temp.next = temp.next.next;
-			temp = null;
-			
-			return true;
-		}
-		else return false;
 	}
 
 }
